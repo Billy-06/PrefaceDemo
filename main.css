@@ -1,0 +1,9 @@
+#main_container{
+    display: flex;
+    justify-content: center;
+}
+
+#subcontianer{
+    width: 65vw;
+    min-height: 90vh;
+}
