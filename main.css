@@ -1,3 +1,8 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+
 #main_container{
     display: flex;
     justify-content: center;
@@ -32,6 +37,7 @@
 }
 
 #menu_contianer{
+    padding-top: 3px;
     position: relative;
     top: 20px;
     right: 40px;
@@ -46,7 +52,7 @@
 
 #headings_container{
     position: relative;
-    bottom: -130px;
+    bottom: -190px;
     display: flex;
     justify-content: center;
 }
@@ -70,7 +76,7 @@
     
 }
 
-#landing_left{
+#landing_right{
     background-image: url("static/homepage_banner2.jpeg");
     border-top-left-radius: 409px;
     border-bottom-left-radius: 409px;
@@ -78,15 +84,16 @@
     border-bottom-right-radius: 0;
 }
 
-#landing_right, #landing_left{
+#landing_left, #landing_right{
     min-height:500px;
     min-width:40vw;
+    margin: 8px;
 
 }
 
 /* Right hand side of the landing page */
 
-#landing_right{
+#landing_left{
     text-align: center;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
@@ -102,7 +109,9 @@
 .choice_options > p{
     text-transform: lowercase;
     font-size: 1.2em;
-    padding: 10px;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
 
 }
 
@@ -134,4 +143,148 @@
     display: flex;
     justify-content: space-between;
     flex-direction: column;
+}
+
+#location_container button{
+    border-radius: 10px;
+    padding:4px !important;
+    border: 0;
+}
+
+@media screen and (max-width: 1250px) {
+    #landing_left{
+        min-width: 400px;
+    }
+    #landing_right{
+        min-width: 500px;
+    }
+    #subcontainer{
+        justify-content: space-between;
+        min-width: 100vw;
+    }
+    
+}
+@media screen and (max-width: 900px) {
+    #landing_right, #landing_left{
+        min-width: 500px;
+    }
+    #subcontainer{
+        min-width: 80vw;
+        display: block;
+    }
+    
+}
+
+/* Hosting Section */
+#become_host_section{
+    background-image: url("static/homepage_croods3.jpeg");
+    width: 100vw;
+    height: 300px;
+    display: flex;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    justify-content: center;
+    vertical-align: middle;
+    align-items: center;
+    
+}
+
+#host_container{
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 5px;
+    width: 280px;
+    height: 160px;
+    border-radius: 10px;
+    background-color: #D9D9D9;
+}
+
+#discover_experiences{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    width: 860px;
+    min-width: 830px;
+}
+
+.experiences{
+    background-color: #D9D9D9;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.experiences > p{
+    font-size: 1.2em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#experiences_heading{
+    width: 100vw;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+}
+
+#checkout_experiences > section{
+    display: flex;
+    margin: 5px;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+
+.experience_img{
+    width:280px;
+    border-radius: 15px;
+    height: 300px;
+    
+}
+
+#third_img_experience, #first_img_experience{
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    
+}
+#sec_img_experience{
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+footer{
+    text-align: center;
+    background-color: rgb(61, 61, 61);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 100vw;
+    color: #D9D9D9;
+}
+
+footer h2{
+    text-transform: uppercase;
+    padding: 0;
+    margin: 0;
+}
+
+#footer_container{
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer_items p {
+    background-color: #D9D9D9;
+    border-radius: 10px;
+    color: black;
+    margin: 0;
+    padding: 3px;
+    width: fit-content;
+}
+
+.footer_items li {
+    /* display: flex; */
+    text-align: left;
+    margin: 0;
+    padding:0;
+}
+
+.footer_items{
+    width: 220px;
 }

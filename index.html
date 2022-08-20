@@ -3,33 +3,44 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Dreamworksbnb</title>
+	<!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
 	<link rel="stylesheet" href="main.css">
+	<title>Dreamworksbnb</title>
 </head>
 <body>
 
 	<div id="main_container">
 		<div id="subcontainer">
-			<div id="landing_right">
-				<h2 id="choice_place">Live anywhere you'd like</h2>
+			<div id="landing_left">
+				<h3 id="choice_place">Live anywhere you'd like</h3>
+				<hr>
 			
 				<div id="location_container">
 					<div id="first_location" class="choice_options">
 						<img src="static/homepage_croods.jpeg">
-						<p>The Crood's Treehouse</p>
+						<p>
+							The Crood's Treehouse<br>
+							<button type="button" class="btn btn-info">Read More</button>
+						</p>
 					</div>
 					<div id="second_location" class="choice_options">
-						<p>Trolls' Village</p>
+						<p>
+							Trolls' Village<br>
+							<button type="button" class="btn btn-info">Read More</button>
+						</p>
 						<img src="static/homepage_trolls.jpeg">
 					</div>
 					<div id="third_location" class="choice_options">
 						<img src="static/homepage_shrek.jpeg">
-						<p>Shrek's Swamp</p>
+						<p>
+							Shrek's Swamp<br>
+							<button type="button" class="btn btn-info">Read More</button>
+						</p>
 					</div>
 				</div>
 	
 			</div>
-			<div id="landing_left">
+			<div id="landing_right">
 				<div id="inner_landing">
 					<img id="logo" src="static/homepage_logo.png">
 					<!-- made banner 2 the background -->
@@ -53,63 +64,76 @@
 	</div>
 
 
-	<div>
-		<img src="homepage_croods3.jpeg">
-		<h3>Become a Host</h2>
-		<h4>
-			Earn extra income<br>
-			and share your space
-		</h4>
-		<p>Learn More</p>
-	</div>
-
-	<h2>Discover Experiences</h2>
-
-	<div>
-		<div>
-			<img src="homepage_abominable.jpeg">
-			<p>Learn how to play violin <br> with Yi and Everest</p>
-		</div>
-		<div>
-			<img src="homepage_toothless.jpeg">
-			<p>Ride with Berk's fastest <br> dragons Toothless & Lightfury</p>
-		</div>
-		<div>
-			<img src="homepage_croods2.jpeg">
-			<p>Hunt for food with the <br> Croods Family</p>
+	<div id="become_host_section">
+		<!-- Made the image a back ground image -->
+		<!-- <img src="static/homepage_croods3.jpeg"> -->
+		<div id="host_container">
+			<h3>Become a Host</h3>
+			<hr>
+			<h4>
+				Earn extra income<br>
+				and share your space
+			</h4>
+			<p>
+				Learn More
+			</p>
 		</div>
 	</div>
 
-	<h2>Inspiration for future getaways</h2>
-
-	<div>
-		<div>
-			<!-- KP - HTML Syntax (II) -->
-			<!-- unordered lists -->
-			<ul>
-				<li>Shrek <br> Far Far Away</li>
-				<li>Boss Baby <br> Baby Corp</li>
-				<li>Madagascar <br> Central Park Zoo</li>
-				<li>Trolls <br> Bergen Town</li>
-			</ul>
+	<div id="checkout_experiences">
+		<div id="experiences_heading">
+			<h2>Discover Experiences</h2>
 		</div>
-		<div>
-			<!-- ordered lists -->
-			<ol>
-				<li>Kung Fu Panda <br> Guangxi, China</li>
-				<li>The Croods <br> Cave</li>
-				<li>Megamind <br> Metro City</li>
-				<li>Turbo <br> San Fernando Valley</li>
-			</ol>
-		</div>
-		<div>
-			<ol>
-				<li>Abominable <br> Mount Everest</li>
-				<li>Bee <br> Central Park</li>
-				<li>Puss in Boots <br> Bangalore</li>
-				<li>Monsters vs. Aliens <br> California</li>
-			</ol>
-		</div>
+		<section>
+			<div id="discover_experiences">
+				<div class="experiences">
+					<img id="first_img_experience" class="experience_img" src="static/homepage_abominable.jpeg">
+					<p>Learn how to play violin <br> with Yi and Everest</p>
+				</div>
+				<div class="experiences">
+					<p>Ride with Berk's fastest <br> dragons Toothless & Lightfury</p>
+					<img id="sec_img_experience" class="experience_img" src="static/homepage_toothless.jpeg">
+				</div>
+				<div class="experiences">
+					<img id="third_img_experience" class="experience_img" src="static/homepage_croods2.jpeg">
+					<p>Hunt for food with the <br> Croods Family</p>
+				</div>
+			</div>
+		</section>
 	</div>
+
+	<footer>
+		<h2>Inspiration for future getaways</h2>
+	
+		<div id="footer_container">
+			<div class="footer_items">
+				<!-- KP - HTML Syntax (II) -->
+				<!-- unordered lists -->
+				<ul>
+					<li>Shrek <p> Far Far Away </p> </li>
+					<li>Boss Baby <p> Baby Corp </p> </li>
+					<li>Madagascar <p> Central Park Zoo </p> </li>
+					<li>Trolls <p> Bergen Town </p> </li>
+				</ul>
+			</div>
+			<div class="footer_items">
+				<!-- ordered lists -->
+				<ol>
+					<li>Kung Fu Panda <p> Guangxi, China </p> </li>
+					<li>The Croods <p> Cave </p> </li>
+					<li>Megamind <p> Metro City </p> </li>
+					<li>Turbo <p> San Fernando Valley </p> </li>
+				</ol>
+			</div>
+			<div class="footer_items">
+				<ol>
+					<li>Abominable <p> Mount Everest </p> </li>
+					<li>Bee <p> Central Park </p> </li>
+					<li>Puss in Boots <p> Bangalore </p> </li>
+					<li>Monsters vs. Aliens <p> California </p> </li>
+				</ol>
+			</div>
+		</div>
+	</footer>
 </body>
 </html>
