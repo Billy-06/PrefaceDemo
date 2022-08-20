@@ -151,30 +151,6 @@ body{
     border: 0;
 }
 
-@media screen and (max-width: 1250px) {
-    #landing_left{
-        min-width: 400px;
-    }
-    #landing_right{
-        min-width: 500px;
-    }
-    #subcontainer{
-        justify-content: space-between;
-        min-width: 100vw;
-    }
-    
-}
-@media screen and (max-width: 900px) {
-    #landing_right, #landing_left{
-        min-width: 500px;
-    }
-    #subcontainer{
-        min-width: 80vw;
-        display: block;
-    }
-    
-}
-
 /* Hosting Section */
 #become_host_section{
     background-image: url("static/homepage_croods3.jpeg");
@@ -187,6 +163,14 @@ body{
     vertical-align: middle;
     align-items: center;
     
+}
+
+#host_info{
+    position: relative;
+    bottom: -40px;
+    padding: 3px;
+    border-radius: 10px;
+    text-decoration: none;
 }
 
 #host_container{
@@ -204,12 +188,12 @@ body{
     justify-content: space-around;
     flex-wrap: nowrap;
     width: 860px;
-    min-width: 830px;
 }
 
 .experiences{
     background-color: #D9D9D9;
     border-radius: 15px;
+    width:280px;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -249,7 +233,7 @@ body{
     border-top-left-radius: 0;
     border-top-right-radius: 0;
 }
-
+/* Footer Code */
 footer{
     text-align: center;
     background-color: rgb(61, 61, 61);
@@ -287,4 +271,60 @@ footer h2{
 
 .footer_items{
     width: 220px;
+}
+
+/* Media Queries */
+@media screen and (max-width: 1250px) {
+    #landing_left{
+        min-width: 400px;
+    }
+    #landing_right{
+        min-width: 500px;
+    }
+    #subcontainer{
+        justify-content: space-between;
+        min-width: 100vw;
+    }
+    
+}
+@media screen and (max-width: 900px) {
+    #landing_right, #landing_left{
+        min-width: 500px;
+    }
+    .experiences{
+        margin:5px;
+    }
+    #subcontainer{
+        min-width: 80vw;
+        display: block;
+    }
+    section{
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    #discover_experiences{
+        width: fit-content;
+        display: block;
+    }
+    
+}
+
+@media screen and (max-width: 750px) {
+    #landing_left{
+        min-width: 400px;
+    }
+    #landing_right{
+        min-width: 500px;
+    }
+    #subcontainer{
+        justify-content: space-between;
+        min-width: 100vw;
+    }
+    #discover_experiences{
+        width: fit-content;
+    }
+
 }
