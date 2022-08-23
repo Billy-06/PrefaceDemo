@@ -1,11 +1,37 @@
+*{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
 body{
     padding: 0;
     margin: 0;
 }
 
-#main_container{
+/* Navigation Styling */
+#search_box{
+    width: 160px;
+}
+
+.carousel_img{
+    height: 70vh;
+    width: fit-content;
+}
+
+
+#main_container, #info_main_container{
     display: flex;
     justify-content: center;
+}
+
+.info_content{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.3em;
+    margin:10px;
+    border-radius: 15px;
+    padding: 7px;
+    width: fit-content;
+    background-color: rgb(61, 61, 61);
+    height: fit-content;
+    color:#D9D9D9;
 }
 
 #subcontainer{
@@ -15,9 +41,63 @@ body{
     align-items: center;
 }
 
+#info_subcontainer{
+    width: 80vw;
+    display: flex;
+    /* background-color: rgb(61, 61, 61); */
+    background-color: transparent;
+    justify-content: baseline;
+    /* align-items: center; */
+}
+
+@media screen and (max-width: 850px) {
+    #info_subcontainer{
+        flex-wrap: wrap;
+    }
+    
+}
+
 #inner_landing{
     display: flex;
     justify-content: space-between;
+}
+
+/* Profiles */
+.profile_img{
+    width: 200px;
+    height: 200px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+#profiles_heading{
+    text-align: center;
+}
+
+.about_div{
+    width: 100vw;
+}
+
+.about_div > h3{
+    text-align: center;
+}
+
+.creators_containers > h4{
+    color: #D9D9D9;
+}
+
+.creators_containers{
+    text-align: center;
+    border-radius: 15px;
+    background-color: rgb(61, 61, 61);
+}
+
+#profiles_section{
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
 }
 
 /* Left hand side of the landing page */
@@ -194,9 +274,25 @@ body{
     background-color: #D9D9D9;
     border-radius: 15px;
     width:280px;
+    height: 370px;
     display: flex;
     flex-direction: column;
     text-align: center;
+}
+
+.accordion-item{
+    margin: 5px;
+    border-radius: 15px;
+    border: 0 !important;
+    width:280px;
+}
+
+.accordion_p_tags{
+    text-align: center;
+}
+
+.accordion-header > button {
+    padding:0;
 }
 
 .experiences > p{
@@ -218,7 +314,7 @@ body{
 }
 
 .experience_img{
-    width:280px;
+    width:260px;
     border-radius: 15px;
     height: 300px;
     

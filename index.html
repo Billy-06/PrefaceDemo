@@ -1,20 +1,52 @@
 <!-- Figma link: https://www.figma.com/file/u4CIOeWh2RINueISiXfqvQ/Dreamworksbnb-Copy?node-id=0%3A1 -->
 
+<!-- Personal Figma Link -->
+<!-- Billy Micah: https://www.figma.com/file/SjGPs6tJcZczX8rbynFQ6m/Demo_Ideation?node-id=0%3A1 -->
+
 <!DOCTYPE html>
 <html>
 <head>
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="main.css">
+	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<!-- popper -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	
+	<!-- Bootstrap CSS & JS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+
+	<script type="text/javascript" src="main.js"></script>
 	<title>Billy Micah | Demo</title>
 </head>
 <body>
+	<!-- Navigation Bar -->
+	<nav class="navbar navbar-dark bg-dark">
+		<form id="navigation_form" class="container-fluid d-flex flex-row" role="search">
+			<a href="index.html" class="btn btn-outline-success me-2" >Home</a>
+			<a href="info.html" class="btn btn-outline-success me-2" >More</a>
+			<a href="#" class="btn btn-outline-success me-2">Contact Us</a>
+			<span class="d-flex" >
+				<input id="search_box" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+				<button class="btn btn-outline-success" type="submit">Search</button>
+			</span>
+		</form>
+	</nav>
+
 
 	<div id="main_container">
 		<div id="subcontainer">
 			<div id="landing_left">
 				<h3 id="choice_place">Live anywhere you'd like</h3>
 				<hr>
-			
+
 				<div id="location_container">
 					<div id="first_location" class="choice_options">
 						<img src="static/homepage_croods.jpeg">
@@ -88,7 +120,77 @@
 			<h2>Discover Experiences</h2>
 		</div>
 		<section>
-			<div id="discover_experiences">
+
+			<!-- Accordion Items -->
+			<div class="accordion" id="discover_experiences">
+				<div class=" accordion-item">
+				  <h2 class="accordion-header" id="headingOne">
+					<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+						<img id="first_img_experience" class="experience_img" src="static/homepage_abominable.jpeg">
+					</button>
+				  </h2>
+				  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+					<div class="accordion-body">
+						<p class="accordion_p_tags">
+							<strong>Learn how to play violin <br> with Yi and Everest</strong><br>
+						</p>
+						<p class="accordion_p_tags">
+							Have you ever imagined how to survive in the woods? The Croods 
+							is the most experienced teachers you will ever find. They have 
+							been living in the cave for years and obviously they know the 
+							rules in the forest. Hunting is just a normal daily thing to them.
+							Don't worry. They will get you covered and teach you every skill 
+							necessary to survive out there.
+						</p>
+					</div>
+				  </div>
+				</div>
+				<div class=" accordion-item">
+					<div id="collapseTwo" class="accordion-collapse collapse show" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+						<div class="accordion-body">
+							<p class="accordion_p_tags">
+								<strong>Ride with Berk's fastest <br> dragons Toothless & Lightfury</strong><br>
+							</p>
+							<p class="accordion_p_tags">
+								With Hiccup's help, the lovely dragons will take you up in the 
+								sky and you will surely have a taste of the super speed and 
+								relentless wind. The remarkable flying will definitely be 
+								unforgettable. For sure, tips to train and get along with the 
+								dragons will be your biggest takeaway. Don't be afraid and 
+								challenge yourself!
+							</p>
+						</div>
+					</div>
+					<h2 class="accordion-header" id="headingTwo">
+					  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+						  <img id="sec_img_experience" class="experience_img" src="static/homepage_toothless.jpeg">
+					  </button>
+					</h2>
+				</div>
+				<div class=" accordion-item">
+				  <h2 class="accordion-header" id="headingOne">
+					<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+						<img id="third_img_experience" class="experience_img" src="static/homepage_croods2.jpeg">
+					</button>
+				  </h2>
+				  <div id="collapseThree" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+					<div class="accordion-body">
+						<p class="accordion_p_tags">
+							<strong>Hunt for food with the <br> Croods Family</strong><br>
+						</p>
+						<p class="accordion_p_tags">
+							Have you ever imagined how to survive in the woods? The Croods is the most 
+							experienced teachers you will ever find. They have been living in the cave 
+							for years and obviously they know the rules in the forest. Hunting is just 
+							a normal daily thing to them. Don't worry. They will get you covered and 
+							teach you every skill necessary to survive out there.
+						</p>
+					</div>
+				  </div>
+				</div>
+			</div>
+
+			<!-- <div id="discover_experiences">
 				<div class="experiences">
 					<img id="first_img_experience" class="experience_img" src="static/homepage_abominable.jpeg">
 					<p>Learn how to play violin <br> with Yi and Everest</p>
@@ -101,7 +203,7 @@
 					<img id="third_img_experience" class="experience_img" src="static/homepage_croods2.jpeg">
 					<p>Hunt for food with the <br> Croods Family</p>
 				</div>
-			</div>
+			</div> -->
 		</section>
 	</div>
 <!-- Uploaded to git pages -->
@@ -113,27 +215,28 @@
 				<!-- KP - HTML Syntax (II) -->
 				<!-- unordered lists -->
 				<ul>
-					<li>Shrek <p> Far Far Away </p> </li>
-					<li>Boss Baby <p> Baby Corp </p> </li>
-					<li>Trolls <p> Bergen Town </p> </li>
-					<li>Madagascar <p> Central Park Zoo </p> </li>
+					
+					<li data-toggle="tooltip" title="Praesent ligula diam, malesuada id tincidunt eu, porta a augue.">Shrek <p> Far Far Away </p> </li>
+					<li data-toggle="tooltip" title="Nulla sit amet metus a nisl viverra ornare tristique pulvinar eros" >Boss Baby <p> Baby Corp </p> </li>
+					<li data-toggle="tooltip" title="Tincidunt eu, porta a augue." >Trolls <p> Bergen Town </p> </li>
+					<li data-toggle="tooltip" title="Rellentesque gravida aliquet dui eu maximus tincidunt eu, porta a augue." >Madagascar <p> Central Park Zoo </p> </li>
 				</ul>
 			</div>
 			<div class="footer_items col-xs-4 col-md-4 col-lg-4">
 				<!-- ordered lists -->
 				<ol>
-					<li>Kung Fu Panda <p> Guangxi, China </p> </li>
-					<li>The Croods <p> Cave </p> </li>
-					<li>Megamind <p> Metro City </p> </li>
-					<li>Turbo <p> San Fernando Valley </p> </li>
+					<li data-toggle="tooltip" title="Cras ornare diam a leo faucibus rhoncus." >Kung Fu Panda <p> Guangxi, China </p> </li>
+					<li data-toggle="tooltip" title="Ghare diam a leo faucibus rhoncus." >The Croods <p> Cave </p> </li>
+					<li data-toggle="tooltip" title="Rellentesque gravida aliquet dui eu maximus" >Megamind <p> Metro City </p> </li>
+					<li data-toggle="tooltip" title="Baliquet dui eu maximus" >Turbo <p> San Fernando Valley </p> </li>
 				</ol>
 			</div>
 			<div class="footer_items col-xs-4 col-md-4 col-lg-4">
 				<ol>
-					<li>Abominable <p> Mount Everest </p> </li>
-					<li>Bee <p> Central Park </p> </li>
-					<li>Puss in Boots <p> Bangalore </p> </li>
-					<li>Monsters vs. Aliens <p> California </p> </li>
+					<li data-toggle="tooltip" title="Besuada id tincidunt eu, porta a augue." >Abominable <p> Mount Everest </p> </li>
+					<li data-toggle="tooltip" title="Sjiunt eu, porta a augue." >Bee <p> Central Park </p> </li>
+					<li data-toggle="tooltip" title="Vidd tincidunt eu, porta a augue." >Puss in Boots <p> Bangalore </p> </li>
+					<li data-toggle="tooltip" title="Aenean blandit molestie felis sit amet viverra." >Monsters vs. Aliens <p> California </p> </li>
 				</ol>
 			</div>
 		</div>
